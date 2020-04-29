@@ -9,7 +9,6 @@ def selectionSort(arr,n):
         arr[minn] = temp
     return arr
 
-
 print("Enter your array")
 arr = list(map(int,input().split()))
 n = len(arr)
