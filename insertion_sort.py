@@ -1,5 +1,5 @@
 def insertionSort(arr,n):
-    for i in range(n):
+    for i in range(1,n):
         curr = arr[i]
         t = i 
         while curr < arr[t-1] and t > 0:
