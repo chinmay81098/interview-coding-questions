@@ -23,7 +23,6 @@ def merge_sort(arr):
         p2 = merge_sort(arr[m:l])
         return merge(p1,p2)
 
-
 arr = list(map(int,input().split()))
 
 print(merge_sort(arr))
