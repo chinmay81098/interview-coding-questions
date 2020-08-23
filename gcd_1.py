@@ -1,10 +1,10 @@
 #Method 1:Function
 def gcd(a,b):
+    c = 0
     while b != 0:
-        t = a
-        a = b
-        b = t%b
-    return a
+        c+=1
+        a,b = b,a%b
+    return (a,b,c)
 
 # Method 2: Recursion
 def gcd_2(a,b):

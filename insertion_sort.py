@@ -3,9 +3,7 @@ def insertionSort(arr,n):
         curr = arr[i]
         t = i 
         while curr < arr[t-1] and t > 0:
-            temp = arr[t]
-            arr[t] = arr[t-1]
-            arr[t-1] = temp
+            arr[t],arr[t-1] = arr[t-1],arr[t]
             t -= 1
     return arr
 
